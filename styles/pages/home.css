@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111827;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px;
+    background: #0f172a;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.section-title {
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #a5b4fc;
+    margin-bottom: 15px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(25% - 12px);
+    min-width: 180px;
+}
+
+.crypto-title {
+    font-size: 18px;
+    color: #94a3b8;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.label {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.up {
+    background: #2563eb;
+}
+
+.down {
+    background: #dc2626;
+}
+
+.volume {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+/* Active Ads */
+.ads-section {
+    margin-top: 40px;
+}
+
+.search-filter {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 10px;
+    background: #0f172a;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.ad-card {
+    background: #1e293b;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: #334155;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verified {
+    background: #2563eb;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+.ad-action {
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.sell {
+    background: #dc2626;
+}
+
+/* ✅ Адаптивность */
+@media (max-width: 900px) {
+    .cards {
+        justify-content: center;
+    }
+    .card {
+        width: calc(50% - 12px);
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 100%;
+    }
+    .ad-card {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .search-filter {
+        flex-direction: column;
+    }
+}

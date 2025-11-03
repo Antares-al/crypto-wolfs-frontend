@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CryptoExchange</title>
+    <link rel="stylesheet" href="styles\pages\home.css">
 </head>
 <body>
-    
+
+<header class="header">
+    <div class="logo">CryptoExchange</div>
+</header>
+
+<main class="container">
+
+    <!-- Обзор рынка -->
+    <h2 class="section-title">Обзор рынка</h2>
+    <p class="subtitle">Актуальные курсы криптовалют и объявления о покупке/продаже</p>
+
+    <div class="cards">
+        <div class="card">
+            <div class="crypto-title">BTC</div>
+            <div class="price">$43 500</div>
+            <div class="label up">+2.50%</div>
+            <div class="volume">Объём: $28 500 000 000</div>
+        </div>
+
+        <div class="card">
+            <div class="crypto-title">ETH</div>
+            <div class="price">$2 650</div>
+            <div class="label down">-1.20%</div>
+            <div class="volume">Объём: $12 800 000 000</div>
+        </div>
+
+        <div class="card">
+            <div class="crypto-title">USDT</div>
+            <div class="price">$1</div>
+            <div class="label up">+0.01%</div>
+            <div class="volume">Объём: $45 200 000 000</div>
+        </div>
+
+        <div class="card">
+            <div class="crypto-title">BNB</div>
+            <div class="price">$315</div>
+            <div class="label up">+1.80%</div>
+            <div class="volume">Объём: $890 000 000</div>
+        </div>
+    </div>
+
+    <!-- Активные объявления -->
+    <div class="ads-section">
+        <h2 class="section-title">Активные объявления</h2>
+
+        <div class="search-filter">
+            <input type="text" placeholder="Поиск по валютам или пользователям...">
+            <select>
+                <option>Все валюты</option>
+            </select>
+        </div>
+
+        <div class="ad-card">
+            <div class="user">
+                <div class="avatar">A</div>
+                <div>
+                    <div class="user-name">Алексей_Трейдер</div>
+                    <div class="rating">Рейтинг: 4.9/5 <span class="verified">Проверен</span></div>
+                </div>
+            </div>
+
+            <div class="ad-info">
+                <div><strong>BTC</strong></div>
+                <div>Количество: 0.5000</div>
+            </div>
+
+            <div class="ad-action sell">Продажа</div>
+        </div>
+    </div>
+
+</main>
+
 </body>
 </html>
