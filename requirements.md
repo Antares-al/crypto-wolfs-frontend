@@ -3,7 +3,6 @@
 ## Styles
 
 ```bash
-
 --bg-color-1: rgb(31,38,50)
 --bg-color-2: rgb(23,28,38)
 --bg-tabs-color: rgb(41,48,61)
@@ -12,5 +11,4 @@
 --placeholder-color: rgb(113,118,129)
 --card-color: rgb(27,33,45)
 --accent-color: rgb(36,42,53)
-
 ```
