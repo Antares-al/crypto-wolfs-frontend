@@ -1,80 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market</title>
-    <link rel = "stylesheet" href = "../styles/pages/market.css" />
-    <link rel = "stylesheet" href = "../styles/reset.css" />
-    <link rel = "stylesheet" href = "../styles/variables.css" />
-    <link rel = "stylesheet" href = "../styles/generals.css" />
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CryptoExchange — Торговля</title>
+  <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="../styles/variables.css" />
+  <link rel="stylesheet" href="../styles/pages/market.css" />
 </head>
 <body>
-    <header class = "header">
-        <div class = "logo"> Crypto-Wolfs </div>
-        <nav class = "nav">
-            <ul> 
-                <li><a href = "#"> Главная </a></li>
-                <li><a href = "#"> Торговля </a></li>
-                <li><a href = "#"> Чат </a></li>
-                <li><a href = "#"> Кошелек </a></li>
-                <li><a href = "#"> Профиль </a></li>
-                </ul>
-            </nav>
-    </header>
 
-    <div class ="container">
-        <main class = "main">
-            <section class = "section">
-                <h1> Торговля </h1>
-                <div class = "cards">
-                    <div class = "card">
-                        <h3>Алексей_Трейдер</h3>
-                        <p>Валюта:  <strong>BTC</strong></p>
-                        <p>Количество: 0.5988</p>
-                        <p>Цена за одну: $21,753</p>
-                        <p>Общая сумма: $43,598</p>
-                        <button class ="chat-button" data_user = "alexey_treyder">Связаться с продавцом</button>
-                    </div>
-                    <div class = "card">
-                        <h3>Мария_Крипто</h3>
-                        <p>Валюта: <strong>ETH</strong></p>
-                        <p>Количество: 0.6201</p>
-                        <p>Цена за одну: $20,522</p>
-                        <p>Общая сумма: $42,016</p>
-                        <button class = "chat-button" data_user = "mariya_crypto"> Связаться с продавцом</button>
-                    </div>
-                </div>
-            </section>
+<header class="header">
+  <div class="logo">CryptoExchange</div>
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Торговля</a></li>
+      <li><a href="#">Кошелек</a></li>
+      <li><a href="#">История</a></li>
+      <li><a href="#">Профиль</a></li>
+    </ul>
+  </nav>
+</header>
 
-            <aside class = "form-section">
-                <h2>Создать объявление</h2>
-                <form>
-                    <label>
-                        Тип:
-                        <select>
-                            <option>Покупка</option>
-                            <option>Продажа</option>
-                        </select>
-                    </label>
-                    <label>
-                        криптовалюта:
-                        <input type="text" placeholder="BTC" />
-                    </label>
-                    <label>
-                        Количество:
-                        <input type="number" placeholder="0.0000" />
-                    </label>
-                    <label>
-                        Цена за единицу (USD):
-                        <input type="number" placeholder="0.00" />
-                    </label>
-                    <button type="submit">Разместить объявление</button>
-                </form>
-            </aside>
-        </main>
+<main class="container">
+
+  <h2 class="section-title">Торговля</h2>
+  <p class="subtitle">Покупка и продажа криптовалют напрямую между пользователями</p>
+
+  <div class="ad-card">
+    <div class="user">
+      <div class="avatar">A</div>
+      <div>
+        <div class="user-name">Алексей_Трейдер</div>
+        <div class="rating">Рейтинг: 4.95 <span class="verified">Проверен</span></div>
+      </div>
     </div>
+
+    <div class="ad-info">
+      <div><strong>BTC</strong></div>
+      <div>Количество: 0.5088</div>
+      <div>Цена за единицу: $43,598</div>
+      <div>Сумма: $21,758</div>
+    </div>
+
+    <a href="chat.html?user=alexey_treyder" class="chat-button">Связаться с продавцом</a>
+  </div>
+
+  <div class="ad-card">
+    <div class="user">
+      <div class="avatar">M</div>
+      <div>
+        <div class="user-name">Мария_Хрипло</div>
+        <div class="rating">Рейтинг: 4.7 <span class="verified">Проверен</span></div>
+      </div>
+    </div>
+
+    <div class="ad-info">
+      <div><strong>BTC</strong></div>
+      <div>Количество: 0.1245</div>
+      <div>Цена за единицу: $43,598</div>
+      <div>Сумма: $2,707</div>
+    </div>
+
+    <a href="chat.html?user=maria_hriplo" class="chat-button sell">Продажа</a>
+  </div>
+
+  <!-- Форма создания объявления -->
+  <div class="ads-section">
+    <h2 class="section-title">Создать объявление</h2>
+    <form class="create-form">
+      <select>
+        <option>Покупка</option>
+        <option>Продажа</option>
+      </select>
+      <input type="text" placeholder="Криптовалюта (например, BTC)" />
+      <input type="text" placeholder="Способ оплаты" />
+      <input type="number" placeholder="Сумма в USD" />
+      <button type="submit">Разместить объявление</button>
+    </form>
+  </div>
+
+</main>
+
 </body>
 </html>
