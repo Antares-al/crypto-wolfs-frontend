@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <link rel = "stylesheet" href = "../styles/pages/market.css" />
+    <link rel = "stylesheet" href = "../styles/reset.css" />
+    <link rel = "stylesheet" href = "../styles/variables.css" />
+    <link rel = "stylesheet" href = "../styles/generals.css" />
+
+
+</head>
+<body>
+    <header class = "header">
+        <div class = "logo"> Crypto-Wolfs </div>
+        <nav class = "nav">
+            <ul> 
+                <li><a href = "#"> Главная </a></li>
+                <li><a href = "#"> Торговля </a></li>
+                <li><a href = "#"> Чат </a></li>
+                <li><a href = "#"> Кошелек </a></li>
+                <li><a href = "#"> Профиль </a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <div class ="container">
+        <main class = "main">
+            <section class = "section">
+                <h1> Торговля </h1>
+                <div class = "cards">
+                    <div class = "card">
+                        <h3>Алексей_Трейдер</h3>
+                        <p>Валюта:  <strong>BTC</strong></p>
+                        <p>Количество: 0.5988</p>
+                        <p>Цена за одну: $21,753</p>
+                        <p>Общая сумма: $43,598</p>
+                        <button class ="chat-button" data_user = "alexey_treyder">Связаться с продавцом</button>
+                    </div>
+                    <div class = "card">
+                        <h3>Мария_Крипто</h3>
+                        <p>Валюта: <strong>ETH</strong></p>
+                        <p>Количество: 0.6201</p>
+                        <p>Цена за одну: $20,522</p>
+                        <p>Общая сумма: $42,016</p>
+                        <button class = "chat-button" data_user = "mariya_crypto"> Связаться с продавцом</button>
+                    </div>
+                </div>
+            </section>
+
+            <aside class = "form-section">
+                <h2>Создать объявление</h2>
+                <form>
+                    <label>
+                        Тип:
+                        <select>
+                            <option>Покупка</option>
+                            <option>Продажа</option>
+                        </select>
+                    </label>
+                    <label>
+                        криптовалюта:
+                        <input type="text" placeholder="BTC" />
+                    </label>
+                    <label>
+                        Количество:
+                        <input type="number" placeholder="0.0000" />
+                    </label>
+                    <label>
+                        Цена за единицу (USD):
+                        <input type="number" placeholder="0.00" />
+                    </label>
+                    <button type="submit">Разместить объявление</button>
+                </form>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
