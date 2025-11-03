@@ -58,6 +58,33 @@ body {
   margin-bottom: 15px;
 }
 
+.market-layout {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.ads-block {
+  flex: 2;
+}
+
+.search-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 10px;
+  background: #0f172a;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  width: 100%;
+}
+
 .ad-card {
   background: #1e293b;
   padding: 20px;
@@ -131,19 +158,26 @@ body {
   background: #dc2626;
 }
 
-.ads-section {
-  margin-top: 40px;
+.form-panel {
+  flex: 1;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.form-title {
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .create-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 15px;
 }
 
-.create-form input,
-.create-form select {
+.create-form select,
+.create-form input {
   padding: 10px;
   background: #0f172a;
   border: none;
@@ -166,6 +200,24 @@ body {
 
 /* Адаптивность */
 @media (max-width: 768px) {
+  .market-layout {
+    flex-direction: column;
+  }
+
+  .form-panel {
+    width: 100%;
+  }
+
+  .ad-card {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .search-filter {
+    flex-direction: column;
+  }
+
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -175,15 +227,5 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
-  }
-
-  .ad-card {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .create-form {
-    flex-direction: column;
   }
 }

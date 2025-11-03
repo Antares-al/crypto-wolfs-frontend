@@ -23,63 +23,78 @@
 </header>
 
 <main class="container">
-
   <h2 class="section-title">Торговля</h2>
   <p class="subtitle">Покупка и продажа криптовалют напрямую между пользователями</p>
 
-  <div class="ad-card">
-    <div class="user">
-      <div class="avatar">A</div>
-      <div>
-        <div class="user-name">Алексей_Трейдер</div>
-        <div class="rating">Рейтинг: 4.95 <span class="verified">Проверен</span></div>
+  <div class="market-layout">
+
+    <!-- 🔍 Фильтр и объявления -->
+    <div class="ads-block">
+      <div class="search-filter">
+        <input type="text" placeholder="Поиск по валютам или пользователям..." />
+        <select>
+          <option>Все валюты</option>
+          <option>BTC</option>
+          <option>ETH</option>
+          <option>USDT</option>
+        </select>
+      </div>
+
+      <div class="ad-card">
+        <div class="user">
+          <div class="avatar">A</div>
+          <div>
+            <div class="user-name">Алексей_Трейдер</div>
+            <div class="rating">Рейтинг: 4.95 <span class="verified">Проверен</span></div>
+          </div>
+        </div>
+        <div class="ad-info">
+          <div><strong>BTC</strong></div>
+          <div>Количество: 0.5088</div>
+          <div>Цена за единицу: $43,598</div>
+          <div>Сумма: $21,758</div>
+        </div>
+        <a href="chat.html?user=alexey_treyder" class="chat-button">Связаться с продавцом</a>
+      </div>
+
+      <div class="ad-card">
+        <div class="user">
+          <div class="avatar">M</div>
+          <div>
+            <div class="user-name">Мария_Хрипло</div>
+            <div class="rating">Рейтинг: 4.7 <span class="verified">Проверен</span></div>
+          </div>
+        </div>
+        <div class="ad-info">
+          <div><strong>BTC</strong></div>
+          <div>Количество: 0.1245</div>
+          <div>Цена за единицу: $43,598</div>
+          <div>Сумма: $2,707</div>
+        </div>
+        <a href="chat.html?user=maria_hriplo" class="chat-button sell">Продажа</a>
       </div>
     </div>
 
-    <div class="ad-info">
-      <div><strong>BTC</strong></div>
-      <div>Количество: 0.5088</div>
-      <div>Цена за единицу: $43,598</div>
-      <div>Сумма: $21,758</div>
-    </div>
+    <!-- 📋 Форма создания объявления -->
+    <aside class="form-panel">
+      <h3 class="form-title">Создать объявление</h3>
+      <form class="create-form">
+        <select>
+          <option>Покупка</option>
+          <option>Продажа</option>
+        </select>
+        <select>
+          <option>BTC</option>
+          <option>ETH</option>
+          <option>USDT</option>
+        </select>
+        <input type="text" placeholder="Способ оплаты" />
+        <input type="number" placeholder="Сумма в USD" />
+        <button type="submit">Разместить объявление</button>
+      </form>
+    </aside>
 
-    <a href="chat.html?user=alexey_treyder" class="chat-button">Связаться с продавцом</a>
   </div>
-
-  <div class="ad-card">
-    <div class="user">
-      <div class="avatar">M</div>
-      <div>
-        <div class="user-name">Мария_Хрипло</div>
-        <div class="rating">Рейтинг: 4.7 <span class="verified">Проверен</span></div>
-      </div>
-    </div>
-
-    <div class="ad-info">
-      <div><strong>BTC</strong></div>
-      <div>Количество: 0.1245</div>
-      <div>Цена за единицу: $43,598</div>
-      <div>Сумма: $2,707</div>
-    </div>
-
-    <a href="chat.html?user=maria_hriplo" class="chat-button sell">Продажа</a>
-  </div>
-
-  <!-- Форма создания объявления -->
-  <div class="ads-section">
-    <h2 class="section-title">Создать объявление</h2>
-    <form class="create-form">
-      <select>
-        <option>Покупка</option>
-        <option>Продажа</option>
-      </select>
-      <input type="text" placeholder="Криптовалюта (например, BTC)" />
-      <input type="text" placeholder="Способ оплаты" />
-      <input type="number" placeholder="Сумма в USD" />
-      <button type="submit">Разместить объявление</button>
-    </form>
-  </div>
-
 </main>
 
 </body>
